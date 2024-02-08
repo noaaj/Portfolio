@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { home, about, skills, work, contact } from "../features/pageupdaterSlice";
+import { home, about, skills, work, contact } from "../features/pageSlice";
 
 export function Navbar() {
     
