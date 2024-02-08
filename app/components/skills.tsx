@@ -2,17 +2,25 @@ export function Skills() {
     return (
     <section id="skills">
         <h2>Skills</h2>
-		<ul>
+        <h3>Languages</h3>
+        <ul>
             <li>HTML</li>
             <li>CSS</li>
-            <li>Javascript</li>
-            <li>Bootstrap</li>
             <li>SASS</li>
-            <li>Ajax</li>
-            <li>JQuery</li>
-            <li>React</li>
-            <li>PHP</li>
-            <li>SQL</li>
+            <li>Javascript</li>
+        </ul>
+        <h3>Libraries and Frameworks</h3>
+        <ul>
+            <li>Bootstrap</li>
+            <li>React.js</li>
+            <li>Next.js</li>
+            <li>Redux</li>
+        </ul>
+        <h3>Dev Tools</h3>
+		<ul>
+            <li>Typescript</li>
+            <li>Github</li>
+            <li>Visual Studio Code</li>
             <li>WordPress</li>
 		</ul>
     </section>

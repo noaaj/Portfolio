@@ -1,5 +1,6 @@
 'use client'
-import { Navbar } from "./navbar";
+import { Header } from "./header";
+import { Footer } from "./footer";
 import { Home } from "./home";
 import { About } from "./about";
 import { Skills } from "./skills";
@@ -29,8 +30,9 @@ export function SectionContainer() {
 
     return (
         <>
-            <Navbar/>
+            <Header/>
             {thisPage()}
+            <Footer/>
         </>
     );
 }

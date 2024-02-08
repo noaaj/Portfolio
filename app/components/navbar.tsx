@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import { home, about, skills, work, contact } from "../features/pageupdaterSlice";
 
 export function Navbar() {
+    
     const dispatch = useDispatch();
 
     return (
