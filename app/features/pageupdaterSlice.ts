@@ -25,5 +25,3 @@ export const pageReducer = createSlice({
 })
 
 export const {home, about, skills, work, contact} = pageReducer.actions;
-
-export default pageReducer.reducer; 

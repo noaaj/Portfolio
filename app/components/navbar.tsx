@@ -1,12 +1,17 @@
+import { useDispatch } from 'react-redux';
+import { home, about, skills, work, contact } from "../features/pageupdaterSlice";
+
 export function Navbar() {
+    const dispatch = useDispatch();
+
     return (
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#work">Work</a></li>
-			<li><a href="#contact">Contact</a></li>
+            <li><a href="#home" onClick={() => {dispatch(home())}}>Home</a></li>
+			<li><a href="#about" onClick={() => {dispatch(about())}}>About</a></li>
+			<li><a href="#skills" onClick={() => {dispatch(skills())}}>Skills</a></li>
+			<li><a href="#work" onClick={() => {dispatch(work())}}>Work</a></li>
+			<li><a href="#contact" onClick={() => {dispatch(contact())}}>Contact</a></li>
         </ul>
     </nav>
     );
