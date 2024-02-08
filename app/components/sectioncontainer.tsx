@@ -31,7 +31,16 @@ export function SectionContainer() {
     return (
         <>
             <Header/>
-            {thisPage()}
+            <div className="container">
+                <div className="row">
+                    <div className="col"></div>
+                    <div className="col-6">
+                        {thisPage()}
+                    </div>
+                    <div className="col"></div>
+                </div>
+                
+            </div>
             <Footer/>
         </>
     );
