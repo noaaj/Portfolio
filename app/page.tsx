@@ -3,7 +3,10 @@ import { SectionContainer } from "./components/sectioncontainer";
 import { store } from './features/store';
 import { Provider } from 'react-redux'
 import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
-import "./globals.css";
+import "./styles/globals.css";
+import "./styles/header.css";
+import "./styles/footer.css";
+import "./styles/sectioncontainer.css";
 
 export default function Home() {
   return (

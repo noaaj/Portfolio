@@ -1,12 +1,17 @@
+import { motion } from 'framer-motion';
+import { motionValues } from "./sectioncontainer";
 import { SocialMedia } from "./socialmedia";
 
 export function Contact() {
     return (
-        <section id="contact">
+        <motion.section id="contact" initial={motionValues[0]}
+            animate={motionValues[1]}
+            exit={motionValues[2]}
+            transition={motionValues[3]}>
             <h2>Contact</h2>
             <h3>Want to work together?</h3>
             <h3>Email me at <a href="mailto:hello@angelnoa.com">hello@angelnoa.com</a></h3>
-            <SocialMedia/>
-        </section>
+            <SocialMedia />
+        </motion.section>
     );
 }

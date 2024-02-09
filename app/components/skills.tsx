@@ -1,6 +1,12 @@
+import { motion } from 'framer-motion';
+import { motionValues } from "./sectioncontainer";
+
 export function Skills() {
     return (
-        <section id="skills">
+        <motion.section id="skills" initial={motionValues[0]}
+            animate={motionValues[1]}
+            exit={motionValues[2]}
+            transition={motionValues[3]}>
             <h2>Skills</h2>
             <div className="container">
                 <div className="row">
@@ -33,6 +39,6 @@ export function Skills() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }

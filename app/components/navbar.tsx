@@ -7,7 +7,7 @@ export function Navbar() {
 
     return (
     <nav>
-        <ul>
+        <ul className="d-flex justify-content-end">
             <li><a href="#home" onClick={() => {dispatch(home())}}>Home</a></li>
 			<li><a href="#about" onClick={() => {dispatch(about())}}>About</a></li>
 			<li><a href="#skills" onClick={() => {dispatch(skills())}}>Skills</a></li>
