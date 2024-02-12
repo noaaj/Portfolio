@@ -9,9 +9,6 @@ export const pageReducer = createSlice({
         home: state => {
             state.value = 'Home'
         }, 
-        about: state => {
-            state.value = 'About'
-        }, 
         skills: state => {
             state.value = 'Skills'
         }, 
@@ -24,4 +21,4 @@ export const pageReducer = createSlice({
     }
 })
 
-export const {home, about, skills, work, contact} = pageReducer.actions;
+export const {home, skills, work, contact} = pageReducer.actions;

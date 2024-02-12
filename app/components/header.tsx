@@ -5,8 +5,8 @@ export function Header() {
         <header>
             <div className="container">
                 <div className="row align-items-center justify-content-between">
-                    <div className="col-2">
-                        <img src="/logo.png" className=".img-fluid logo" />
+                    <div className="col-3">
+                        <h1>Angel Noa</h1>
                     </div>
                     <div className="col-6">
                         <Navbar />

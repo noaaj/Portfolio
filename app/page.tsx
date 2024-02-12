@@ -7,6 +7,8 @@ import "./styles/globals.css";
 import "./styles/header.css";
 import "./styles/footer.css";
 import "./styles/sectioncontainer.css";
+import "./styles/skills.css";
+import "./styles/work.css";
 
 export default function Home() {
   return (

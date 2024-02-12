@@ -2,7 +2,6 @@
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { Home } from "./home";
-import { About } from "./about";
 import { Skills } from "./skills";
 import { Work } from "./work";
 import { Contact } from "./contact";
@@ -16,8 +15,6 @@ export function SectionContainer() {
     function thisPage() {
         if (currentPage == 'Home') {
             return (<Home />);
-        } else if (currentPage == 'About') {
-            return (<About />);
         } else if (currentPage == 'Skills') {
             return (<Skills />);
         } else if (currentPage == 'Work') {

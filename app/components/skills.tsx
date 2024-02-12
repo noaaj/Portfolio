@@ -12,30 +12,24 @@ export function Skills() {
                 <div className="row">
                     <div className="col">
                         <h3>Languages</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>SASS</li>
-                            <li>Javascript</li>
-                        </ul>
+                        HTML<br/>
+                        CSS<br/>
+                        SASS<br/>
+                        Javascript
                     </div>
                     <div className="col">
-                        <h3>Libraries and Frameworks</h3>
-                        <ul>
-                            <li>Bootstrap</li>
-                            <li>React.js</li>
-                            <li>Next.js</li>
-                            <li>Redux</li>
-                        </ul>
+                        <h3>Frameworks</h3>
+                        Bootstrap<br/>
+                        React.js<br/>
+                        Next.js<br/>
+                        Redux
                     </div>
                     <div className="col">
                         <h3>Dev Tools</h3>
-                        <ul>
-                            <li>Typescript</li>
-                            <li>Github</li>
-                            <li>Visual Studio Code</li>
-                            <li>WordPress</li>
-                        </ul>
+                        Typescript<br/>
+                        Github<br/>
+                        Visual Studio Code<br/>
+                        WordPress
                     </div>
                 </div>
             </div>
