@@ -9,12 +9,21 @@ import "./styles/footer.css";
 import "./styles/sectioncontainer.css";
 import "./styles/skills.css";
 import "./styles/work.css";
+import useLocalStorage from 'use-local-storage'
 
 export default function Home() {
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  }
+
   return (
-    <main className="">
+    <main className="" data-theme={theme}>
       <Provider store={store}>
-        <SectionContainer/>
+        <SectionContainer theme={switchTheme} />
       </Provider>
     </main>
   );
