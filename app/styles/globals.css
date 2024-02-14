@@ -3,23 +3,27 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  --heading-color: #272C29;
-  --content-color: #272C29;
-  --background-color: #ACB9B2;
-  --superhighlight: #7DBD99;
-  --normalhighlight: #4C7C61;
+  --heading-color: rgba(39,44,41,1);
+  --content-color: #25282A;
+  --background-color1: #E0E0E0;
+  --background-color2: #ffffff;
+  --superhighlight: #00AF66;
+  --normalhighlight: #002710;
 }
 
 [data-theme="dark"] {
   --heading-color: #FFFFFF;
   --content-color: #ACB9B2;
-  --background-color: #272C29;
+  --background-color1: rgba(39,44,41,1);
+  --background-color2: rgba(53,69,59,1);
   --superhighlight: #7DBD99;
   --normalhighlight: #4C7C61;
 }
 
 main {
   color: var(--content-color);
+  background-color: var(--background-color1);
+  background: linear-gradient(90deg, var(--background-color1) 22%, var(--background-color2) 100%);
 }
 
 h1,
@@ -61,5 +65,4 @@ a:hover::before {
 .particles {
   position: fixed;
   width: 100%;
-  z-index: -10;
 }

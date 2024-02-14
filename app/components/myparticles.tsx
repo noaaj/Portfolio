@@ -6,7 +6,7 @@ import {
 } from "@tsparticles/engine";
 import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 
-export function MyParticles() {
+export function MyParticles({particleColor} : {particleColor:string}) {
     const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -25,57 +25,50 @@ export function MyParticles() {
     () => ({
       background: {
         color: {
-          value: "#272C29",
+          value: "",
         },
       },
       fpsLimit: 120,
       interactivity: {
         events: {
-          onClick: {
-            enable: true,
-            mode: "push",
-          },
           onHover: {
             enable: true,
             mode: "repulse",
           },
         },
         modes: {
-          push: {
-            quantity: 4,
-          },
           repulse: {
-            distance: 200,
-            duration: 0.4,
+            distance: 100,
+            duration: .5,
           },
         },
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: particleColor,
         },
         links: {
           color: "#ffffff",
-          distance: 150,
-          enable: true,
+          distance: 100,
+          enable: false,
           opacity: 0.5,
           width: 1,
         },
         move: {
-          direction: "bottom",
+          direction: "left",
           enable: true,
           outModes: {
-            default: "bounce",
+            default: "out",
           },
           random: false,
-          speed: 6,
+          speed: 3,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 200,
         },
         opacity: {
           value: 0.5,
@@ -84,13 +77,15 @@ export function MyParticles() {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: .5, max: 1.2 },
         },
       },
       detectRetina: true,
     }),
     [],
   );
+
+  options.particles!.color!.value = particleColor;
 
   return (
     <Particles

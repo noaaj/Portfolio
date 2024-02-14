@@ -8,7 +8,7 @@ import { Contact } from "./contact";
 import { RootState } from '../features/store';
 import { useSelector } from 'react-redux';
 
-export function SectionContainer({theme} : {theme:any}) {
+export function SectionContainer({switchTheme} : {switchTheme:any}) {
 
     const currentPage = useSelector((state: RootState) => state.page.value)
 
@@ -26,7 +26,7 @@ export function SectionContainer({theme} : {theme:any}) {
 
     return (
         <div className="d-flex flex-column justify-content-between sectioncontainer">
-            <Header theme={theme}/>
+            <Header switchTheme={switchTheme}/>
             <div className="container">
                 <div className="row">
                     <div className="col"></div>

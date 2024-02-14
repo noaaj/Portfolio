@@ -1,4 +1,5 @@
-'use client'
+'use client';
+import { useState } from 'react';
 import { SectionContainer } from "./components/sectioncontainer";
 import { MyParticles } from "./components/myparticles";
 import { store } from './features/store';
@@ -17,16 +18,21 @@ export default function Home() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
+  const  [particleColor, setColor] = useState(theme === "light" ?   "rgba(39,44,41,1)" :  "#ACB9B2");
+
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
+     setColor(theme === "light" ?  "#ACB9B2" : "rgba(39,44,41,1)");
   }
+
+  
 
   return (
     <main className="" data-theme={theme}> 
       <Provider store={store}>
-        <MyParticles/>
-        <SectionContainer theme={switchTheme} />
+        <MyParticles particleColor={particleColor}/>
+        <SectionContainer switchTheme={switchTheme} />
       </Provider>
     </main>
   );
