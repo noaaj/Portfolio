@@ -1,3 +1,54 @@
 #work h2 {
     text-align: center;
 }
+
+.workcontainer {
+    background-color: rgba(53, 69, 59, 1);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.workcontainer h4 {
+    color: white;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(53,69,59,1);
+    background-color: #7DBD99;
+    border: 2px #7DBD99 solid;
+    display: block;
+}
+
+.btn:hover {
+    color: #7DBD99;
+    background-color: rgba(53,69,59,1);
+    border: 2px #7DBD99 solid;
+}
+
+.workcontainer a::before {
+    display: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+.workcontainer a:hover::before {
+    transform: scaleX(0);
+}
+
+.techused {
+    font-size: 14px;
+    margin: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    color: white;
+    background-color: #4C7C61;
+    border-radius: 20px;
+}
+
+.workcontainer img {
+    max-width: 250px;
+    padding: 20px 0px;
+}

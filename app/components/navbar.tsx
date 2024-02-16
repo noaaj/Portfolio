@@ -12,8 +12,6 @@ export function Navbar() {
 			<li><a href="#skills" onClick={() => {dispatch(skills())}}>Skills</a></li>
 			<li><a href="#work" onClick={() => {dispatch(work())}}>Work</a></li>
 			<li><a href="#contact" onClick={() => {dispatch(contact())}}>Contact</a></li>
-            <li><a href="https://github.com/noaaj" target="_blank">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/angelnoa/" target="_blank">LinkedIn</a></li>
         </ul>
     </nav>
     );

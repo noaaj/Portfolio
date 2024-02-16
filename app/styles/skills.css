@@ -5,3 +5,12 @@
 #skills ul {
     list-style: none;
 }
+
+.logoImage {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.techBox {
+    padding: 20px;
+}
