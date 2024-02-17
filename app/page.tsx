@@ -15,9 +15,10 @@ import useLocalStorage from 'use-local-storage'
 
 
 export default function Home() {
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+  
+  let startMode = "dark";
 
+  const [theme, setTheme] = useState(startMode === "dark" ? "dark" : "light");
   const [particleColor, setColor] = useState(theme === "light" ? "rgba(39,44,41,1)" : "#ACB9B2");
   const [modeButton, setChecked] = useState(theme ==="light" ? false : true);
 
