@@ -11,7 +11,6 @@ import "./styles/footer.css";
 import "./styles/sectioncontainer.css";
 import "./styles/skills.css";
 import "./styles/work.css";
-import useLocalStorage from 'use-local-storage'
 
 
 export default function Home() {

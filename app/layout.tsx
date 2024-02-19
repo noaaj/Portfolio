@@ -1,7 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Oswald, Montserrat } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+export const oswald = Oswald( {
+  subsets: ["latin"], 
+  display: "swap", 
+  variable: '--font-oswald'
+})
+
+export const montserrat = Montserrat( {
+  subsets: ["latin"], 
+  display: "swap", 
+  variable: '--font-montserrat'
+})
 
 export const metadata: Metadata = {
   title: "Angel Noa - Front End Developer",
@@ -15,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={montserrat.variable + oswald.variable}>{children}</body>
     </html>
   );
 }
