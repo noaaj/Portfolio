@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Oswald, Montserrat } from "next/font/google";
 
-export const oswald = Oswald( {
+const oswald = Oswald( {
   subsets: ["latin"], 
   display: "swap", 
   variable: '--font-oswald'
 })
 
-export const montserrat = Montserrat( {
+const montserrat = Montserrat( {
   subsets: ["latin"], 
   display: "swap", 
   variable: '--font-montserrat'
